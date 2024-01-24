@@ -1,4 +1,1 @@
-include LICENSE
-include README.rst
-recursive-include fastapicsv *
-recursive-include docs *
+global-include *.txt *.py
