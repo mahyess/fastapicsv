@@ -4,7 +4,7 @@ build-backend = 'setuptools.build_meta:__legacy__'
 
 [project]
 name = "fast-csv-middleware"
-version = "0.1.2"
+version = "0.1.3"
 description = "A CSV Middleware for FastAPI"
 readme = "README.md"
 authors = [{ name = "Mahesh Prajapati", email = "zephyrr2722@gmail.com" }]
