@@ -42,7 +42,7 @@ class CSVMiddleware(BaseHTTPMiddleware):
             response_body = b""
             async for chunk in response.body_iterator:
                 response_body += chunk
-            content = self.json_to_csv(response_body.decode())
+            content = self.json_to_csv(response_body.decode()).encode()
             headers = dict(response.headers)
             headers.update({"content-length": str(len(content))})
             headers.update({"Content-Type": "text/csv"})
